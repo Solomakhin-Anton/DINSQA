@@ -1,3 +1,7 @@
+## CI
+[![Build status](https://ci.appveyor.com/api/projects/status/pa0bl7f8bq0rqmke?svg=true)](https://ci.appveyor.com/project/Solomakhin-Anton/dinsqa)
+
+
 ## Repository Description:
 
 1. The plan of auto tests - https://github.com/Solomakhin-Anton/DINSQA/blob/master/Plan.md .
