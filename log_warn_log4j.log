@@ -1,0 +1,10 @@
+2020-06-15 17:09:03,806 WARN [http-nio-8080-exec-8] o.s.w.s.PageNotFound [ResponseEntityExceptionHandler.java:209] Request method 'PUT' not supported
+2020-06-15 17:10:25,427 WARN [http-nio-8080-exec-1] o.s.w.s.PageNotFound [ResponseEntityExceptionHandler.java:209] Request method 'DELETE' not supported
+2020-06-15 17:12:22,201 WARN [http-nio-8080-exec-9] o.s.w.s.PageNotFound [ResponseEntityExceptionHandler.java:209] Request method 'DELETE' not supported
+2020-06-15 17:12:48,325 WARN [http-nio-8080-exec-1] o.s.w.s.PageNotFound [ResponseEntityExceptionHandler.java:209] Request method 'DELETE' not supported
+2020-06-15 17:14:50,534 WARN [http-nio-8080-exec-3] o.s.w.s.PageNotFound [ResponseEntityExceptionHandler.java:209] Request method 'PUT' not supported
+2020-06-15 17:23:50,984 WARN [http-nio-8080-exec-10] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 23503, SQLState: 23503
+2020-06-15 17:27:45,711 WARN [http-nio-8080-exec-7] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 23503, SQLState: 23503
+2020-06-15 17:28:07,632 WARN [http-nio-8080-exec-8] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 23503, SQLState: 23503
+2020-06-15 17:28:36,751 WARN [http-nio-8080-exec-9] o.h.e.j.s.SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: 23503, SQLState: 23503
+2020-06-15 17:36:35,168 WARN [http-nio-8080-exec-5] o.s.w.s.PageNotFound [ResponseEntityExceptionHandler.java:209] Request method 'DELETE' not supported
