@@ -1,8 +1,8 @@
 ## Repository Description:
 
-1. The plan of auto tests.
-2. The program code.
-3. The bug-reports.
+1. The plan of auto tests - https://github.com/Solomakhin-Anton/DINSQA/blob/master/Plan.md .
+2. The program code - https://github.com/Solomakhin-Anton/DINSQA/tree/master/src/test/java .
+3. The bug-reports - https://github.com/Solomakhin-Anton/DINSQA/issues .
 
 ### To run the program and conduct auto tests:
 
