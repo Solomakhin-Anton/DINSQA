@@ -9,8 +9,7 @@ import rest.RestUser;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 class UserDataTest {
 
@@ -47,12 +46,12 @@ class UserDataTest {
         assertTrue(response.contains(firstName2));
     }
 
-    @DisplayName("Удаляем третьего - id 3")
+    @DisplayName("Удаляем третьего - id 2")
     @Test
     void shouldDelete(){
         UserData userData = new UserData();
         String response = RestUser.usedDelete(userData);
-        assertEquals(false, response.contains(firstName2));
+        assertFalse(response.contains(firstName2));
     }
 
     @DisplayName("Запрашиваем все данные")

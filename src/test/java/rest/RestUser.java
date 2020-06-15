@@ -46,7 +46,7 @@ public class RestUser {
                 .spec(requestSpec)
                 .body(userData)
                 .when()
-                .delete("/users/3")
+                .delete("/users/2")
                 .then().log().all()
                 .statusCode(202)
                 .extract()
