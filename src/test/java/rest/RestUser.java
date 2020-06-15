@@ -88,4 +88,17 @@ public class RestUser {
                 .extract()
                 .asString();
     }
+
+    public static String usedGetForSearch(UserData userData) {
+        return given()
+                .spec(requestSpec)
+                .body(userData)
+                .when()
+                .get("/users/search?name=John")
+                .then().log().all()
+                .statusCode(200)
+                .extract()
+                .asString();
+    }
+
 }

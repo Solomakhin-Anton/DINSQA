@@ -113,4 +113,29 @@ public class RestContact {
                 .extract()
                 .asString();
     }
+
+    public static String usedGetForSearchByNumber(ContactData contactData) {
+        return given()
+                .spec(requestSpec)
+                .body(contactData)
+                .when()
+                .get("/users/1/contacts/search?number=5321456789")
+                .then().log().all()
+                .statusCode(200)
+                .extract()
+                .asString();
+    }
+
+    public static String usedGetForSearchById(ContactData contactData) {
+        return given()
+                .spec(requestSpec)
+                .body(contactData)
+                .when()
+                .get("/users/1/contacts/1")
+                .then().log().all()
+                .statusCode(200)
+                .extract()
+                .asString();
+    }
+
 }

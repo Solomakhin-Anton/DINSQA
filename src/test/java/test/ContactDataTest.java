@@ -100,4 +100,24 @@ class ContactDataTest {
         assertTrue(response.contains("User with this: 45 not found"));
     }
 
+    @DisplayName("Поиск по номеру")
+    @Test
+    void shouldSearch(){
+        ContactData contactData = new ContactData();
+        String response = RestContact.usedGetForSearchByNumber(contactData);
+        System.out.println(response);
+        assertTrue(response.contains("5321456789"));
+        assertFalse(response.contains("3123456789"));
+    }
+
+    @DisplayName("Поиск по id")
+    @Test
+    void shouldSearchById(){
+        ContactData contactData = new ContactData();
+        String response = RestContact.usedGetForSearchById(contactData);
+        System.out.println(response);
+        assertTrue(response.contains("Brandon"));
+        assertFalse(response.contains("Cersei"));
+    }
+
 }

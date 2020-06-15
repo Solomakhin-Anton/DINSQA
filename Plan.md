@@ -23,6 +23,8 @@ a) Users:
 - check the behavior of the program if we replace the data with new ones using the characters;
 - check the behavior of the program if we enter name values ​​greater than 25 characters, for example, 26;
 - check the behavior of the program if we enter last name values ​​greater than 25 characters, for example, 26;
+- check the behavior of the program if you search by a nonexistent name;
+- check the behavior of the program if you search by an empty name; 
 
 b) Contacts: 
 - check the behavior of the program when sending empty data;
@@ -48,3 +50,7 @@ b) Contacts:
 - check the behavior of the program if we enter only letters in the email field;
 - check the behavior of the program if we leave the email field empty;
 - check the behavior of the program if we leave the phone field empty;
+- check the behavior of the program if you search by a non-existent phone number;
+- check the behavior of the program, if you search by empty phone number;
+- check the behavior of the program if you search by a non-existent id;
+- check the behavior of the program, if you search by empty id;

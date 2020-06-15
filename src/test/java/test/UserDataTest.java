@@ -64,6 +64,16 @@ class UserDataTest {
         assertTrue(response.contains("2"));
     }
 
+    @DisplayName("Поиск по имени")
+    @Test
+    void shouldSearch(){
+        UserData userData = new UserData();
+        String response = RestUser.usedGetForSearch(userData);
+        System.out.println(response);
+        assertTrue(response.contains("John"));
+        assertFalse(response.contains(firstName2));
+    }
+
     @DisplayName("Негативный тест: запостим без данных")
     @Test
     void shouldPostNull(){
@@ -81,4 +91,5 @@ class UserDataTest {
         System.out.println(response);
         assertTrue(response.contains("User with this: 45 not found"));
     }
+
 }
