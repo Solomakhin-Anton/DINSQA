@@ -82,24 +82,6 @@ class ContactDataTest {
         assertTrue(response.contains("1" + "2"+ "3" + "4" + "5"));
     }
 
-    @DisplayName("Негативный тест: запостим без данных")
-    @Test
-    void shouldPostNull(){
-       ContactData contactData = new ContactData();
-        String response = RestContact.usedPostNull(contactData);
-        System.out.println(response);
-        assertTrue(response.contains("должно быть задано"));
-    }
-
-    @DisplayName("Негативный тест: удалим то, чего нет")
-    @Test
-    void shouldDeleteNothing(){
-        ContactData contactData = new ContactData();
-        String response = RestContact.usedDeleteNothing(contactData);
-        System.out.println(response);
-        assertTrue(response.contains("User with this: 45 not found"));
-    }
-
     @DisplayName("Поиск по номеру")
     @Test
     void shouldSearch(){
@@ -118,6 +100,24 @@ class ContactDataTest {
         System.out.println(response);
         assertTrue(response.contains("Brandon"));
         assertFalse(response.contains("Cersei"));
+    }
+
+    @DisplayName("Негативный тест: запостим без данных")
+    @Test
+    void shouldPostNull(){
+       ContactData contactData = new ContactData();
+        String response = RestContact.usedPostNull(contactData);
+        System.out.println(response);
+        assertTrue(response.contains("не может быть пусто"));
+    }
+
+    @DisplayName("Негативный тест: удалим то, чего нет")
+    @Test
+    void shouldDeleteNothing(){
+        ContactData contactData = new ContactData();
+        String response = RestContact.usedDeleteNothing(contactData);
+        System.out.println(response);
+        assertTrue(response.contains("User with this: 45 not found"));
     }
 
 }
