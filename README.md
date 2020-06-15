@@ -14,6 +14,9 @@
 The report will be stored in the folder: build/test-results.
 
 #### OS environment:
+
 MacOS 10.13.6.
+
 Java SE 11.
+
 Openjdk Version "11.0.5".
