@@ -46,7 +46,7 @@ class UserDataTest {
         assertTrue(response.contains(firstName2));
     }
 
-    @DisplayName("Удаляем третьего - id 2")
+    @DisplayName("Удаляем второго - id 2")
     @Test
     void shouldDelete(){
         UserData userData = new UserData();

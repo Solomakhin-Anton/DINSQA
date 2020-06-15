@@ -9,8 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import rest.RestContact;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 class ContactDataTest {
 
@@ -55,7 +54,7 @@ class ContactDataTest {
         assertTrue(response.contains(firstName2));
     }
 
-    @DisplayName("Меняем первого пользователя, которого запостили, - ../1/..")
+    @DisplayName("Меняем первого пользователя - ../1/..")
     @Test
     void shouldPut(){
         ContactData contactData = new ContactData(firstName3, lastName3, phone3, email3);
@@ -64,12 +63,12 @@ class ContactDataTest {
         assertTrue(response.contains(firstName3));
     }
 
-    @DisplayName("Удаляем второго пользователя, которого запостили, - ../2/..")
+    @DisplayName("Удаляем второго пользователя - ../2/..")
     @Test
     void shouldDelete(){
         ContactData contactData = new ContactData();
         String response = RestContact.usedDelete(contactData);
-        assertEquals(false, response.contains(firstName2));
+        assertFalse(response.contains(firstName2));
     }
 
     @DisplayName("Запрашиваем все данные")
