@@ -1,4 +1,4 @@
-#Test plan of the application
+# Test plan of the application
 
 1. Positive tests (fill in English in both fields - users and contacts):
 
